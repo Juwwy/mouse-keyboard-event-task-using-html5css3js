@@ -1,0 +1,16 @@
+.form-col{
+    height:250px;
+    
+    
+}
+
+ input[type="submit"]:hover{
+ transform: scale(0.8);
+ border: 1px solid green !important;
+ background-color: beige;
+ color: green;
+}
+
+label:hover , .gender:hover{
+    transform: scale(0.8);
+}

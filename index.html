@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mouse | Keyboard Event Task</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <section class="container-fluid">
+        <section class="container">
+            <header>
+                <div class="logo"><h1></h1></div>
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand btn btn-outline-success" href="#">LabTask</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Reference
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">About Us</a>
+                            <a class="dropdown-item" href="#">Courses</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Admissions</a>
+                          </div>
+                        </li>
+            
+                      <form class="form-inline my-2 my-lg-0 ">
+                        <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search" id="search" onkeypress="change(this.id)" onmouseover="change(this.id)" onmouseout="revert(this.id)" >
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </nav>
+            </header>
+
+            
+        </section>
+        <section class="container">
+            <div class=" bg-success text-light mb-3 text-center">
+                <div><h1 id="header" >Hello! friend you are welcome to our landing page</h1></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consequatur iste dolore magni minus consectetur cum sequi <br>repudiandae veniam in, aliquam earum, quos maxime cumque voluptates perspiciatis eveniet accusamus similique.</p>
+            <h4><i>Lets know more about you. Please kindly fill the form below and we will get back to you shortly</i></h4>
+            <marquee>welcome! we gat the best lab task for you</marquee>
+            </div>
+
+            
+            <div class="row form-col">
+                <div class="col-md-6">
+                    <div class="card border-success mb-3 text-center" style="max-width: 25rem;">
+                        <div class="card-header bg-transparent border-success text-success"><h2>LabTasks Form</h2></div>
+                        <div class="card-body text-success">
+                          <h5 class="card-title"><h2>Please complete this application form correctly</h2></h5>
+                          <form action="" method="" class="form-group">
+                            
+            
+                            <label for="fullname">Fullname:</label><br>
+                            <input type="text" id="fullname" class="form-control" required autofocus
+                            onkeydown="change(this.id)" onmouseover="change(this.id)" onmouseout="revert(this.id)">
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" class="form-control" onkeypress="change(this.id)" onmouseover="change(this.id)" onmouseout="revert(this.id)" required>
+                            <label for="telephone">Telephone:</label><br>
+                            <input type="text" id="tel" class="form-control" onkeypress="change(this.id)" onmouseover="change(this.id)" onmouseout="revert(this.id)" required>
+                            <input type="checkbox" id="gender"  onmouseover="change(this.id)" onmouseout="revert(this.id)" >
+                            <label for="gender" class="gender">Male</label>
+                            <input type="checkbox" id="gender" class="form-group" id="female" onmousedown="change(this.id)" >
+                            <label for="gender" class="gender" >female</label><br>
+                            <label for="select">Educational Qualification:</label>
+                            <select for="education" class="form-control" id="select" onmouseover="change(this.id)"  onmouseout="revert(this.id)"> 
+                                
+                                <option onmousedown="change(this.id)">-No select-</option>
+                                <option onmousedown="change(this.id)">High school</option>
+                                <option onmousedown="change(this.id)">Diploma</option>
+                                <option onmousedown="change(this.id)">Undergraduate</option>
+                                <option onmousedown="change(this.id)">Post Graduate</option>
+                                <option onmousedown="change(this.id)">Ph.D</option>
+                            </select><br>
+                            <input type="Submit" value="submit" class="form-control btn btn-success btn-outline bs" >
+                        </form>
+                        </div>
+                        <div class="card-footer bg-transparent border-success"><h3><em>We are here to give you the best experience!!</em></h3></div>
+                      </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/c1.jpg" class="img-fluid" 
+                    id="changeImg" onmouseover="doThis(this, 'images/tolearn.jpg')" onmouseout="doThis(this, 'images/c1.jpg')">
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
