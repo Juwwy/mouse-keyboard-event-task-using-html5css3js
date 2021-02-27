@@ -38,9 +38,9 @@ var clientName;
 
            var lastAnswer;
            lastAnswer = prompt("What is <=3 ?");
-           if (lastAnswer== 3){
+           if (lastAnswer <= 3){
                alert("Bravo! Thanks for your time of responses" + " " + clientName + "." + " " + "Javascript is Great!")
-           } else if(lastAnswer != 3){
+           } else if(lastAnswer > 3){
                alert("Shock miss! nice try"  + " " + clientName + "." + " " + "Javascript is Great!" )
            }
 
